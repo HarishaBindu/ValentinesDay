@@ -85,16 +85,6 @@ button:hover{
     opacity:0.9;
 }
 
-/* Input */
-input{
-    width:90%;
-    max-width:250px;
-    padding:8px;
-    border:none;
-    border-radius:15px;
-    text-align:center;
-}
-
 /* Music Button */
 #musicBtn{
     position:fixed;
@@ -124,14 +114,6 @@ input{
     border-radius:20px;
     width:90%;
     max-width:350px;
-}
-
-/* Secret */
-#secretText{
-    display:none;
-    margin-top:15px;
-    font-size:16px;
-    color:#fffde6;
 }
 
 </style>
@@ -175,23 +157,6 @@ I promise to love you forever 💕
 <div class="card">
 <h3>💍 From My Heart</h3>
 <button onclick="openProposal()">Open 💖</button>
-</div>
-
-<!-- Secret -->
-<div class="card">
-<h3>🔐 Secret Message</h3>
-
-<input type="password" id="pwd" placeholder="Enter secret">
-
-<br><br>
-
-<button onclick="unlock()">Unlock ❤️</button>
-
-<div id="secretText">
-My love, you are my forever.  
-My today, my tomorrow, my always ❤️💍
-</div>
-
 </div>
 
 </div>
@@ -245,18 +210,6 @@ function accept(){
 
 function reject(){
     alert("No is not allowed 😜💕");
-}
-
-/* Secret */
-function unlock(){
-
-    let p=document.getElementById("pwd").value;
-
-    if(p==="bindu"){
-        document.getElementById("secretText").style.display="block";
-    }else{
-        alert("Wrong secret 😢");
-    }
 }
 
 </script>
