@@ -3,11 +3,12 @@
 <head>
 <meta charset="UTF-8">
 
-<!-- IMPORTANT: Mobile Support -->
+<!-- Mobile Support -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>For My Love Bindu ❤️</title>
 
+<!-- Elegant Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
@@ -15,35 +16,37 @@
 /* Reset */
 *{
     box-sizing:border-box;
+    margin:0;
+    padding:0;
 }
 
 /* Body */
 body{
-    margin:0;
     font-family:'Poppins',sans-serif;
     background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb);
+    min-height:100vh;
     color:white;
     text-align:center;
-    overflow-x:hidden;
 }
 
-/* Container */
+/* Main Container */
 .container{
-    max-width:100%;
-    padding:25px 15px;
+    max-width:700px;
+    margin:auto;
+    padding:40px 20px;
 }
 
-/* Headings */
+/* Header */
 h1{
     font-family:'Dancing Script',cursive;
-    font-size:2.8rem;
+    font-size:3rem;
     margin-bottom:10px;
 }
 
 h2{
     font-family:'Dancing Script',cursive;
-    font-size:2rem;
-    margin-top:5px;
+    font-size:2.2rem;
+    margin-bottom:25px;
 }
 
 .name{
@@ -51,25 +54,19 @@ h2{
     font-weight:bold;
 }
 
-/* Heart */
-.heart{
-    font-size:60px;
-    animation:beat 1.5s infinite;
-}
-
-@keyframes beat{
-    0%{transform:scale(1);}
-    50%{transform:scale(1.2);}
-    100%{transform:scale(1);}
-}
-
-/* Cards */
+/* Card Style */
 .card{
-    background:rgba(255,255,255,0.22);
-    padding:20px;
-    border-radius:18px;
-    margin:20px 0;
-    backdrop-filter:blur(6px);
+    background:rgba(255,255,255,0.25);
+    border-radius:20px;
+    padding:25px;
+    margin:25px 0;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* Text */
+p{
+    line-height:1.6;
+    margin:10px 0;
 }
 
 /* Buttons */
@@ -77,10 +74,11 @@ button{
     background:#ff6f91;
     color:white;
     border:none;
-    padding:10px 22px;
+    padding:10px 25px;
     font-size:15px;
     border-radius:25px;
     cursor:pointer;
+    margin-top:10px;
 }
 
 button:hover{
@@ -89,25 +87,24 @@ button:hover{
 
 /* Input */
 input{
-    padding:8px;
-    border-radius:15px;
-    border:none;
     width:90%;
-    max-width:260px;
+    max-width:250px;
+    padding:8px;
+    border:none;
+    border-radius:15px;
     text-align:center;
 }
 
 /* Music Button */
 #musicBtn{
     position:fixed;
-    top:10px;
-    right:10px;
+    top:15px;
+    right:15px;
     background:white;
     color:#ff4f7b;
     padding:6px 12px;
     border-radius:18px;
     font-size:13px;
-    z-index:1000;
 }
 
 /* Popup */
@@ -118,7 +115,6 @@ input{
     display:none;
     justify-content:center;
     align-items:center;
-    z-index:999;
 }
 
 .proposal-box{
@@ -133,39 +129,9 @@ input{
 /* Secret */
 #secretText{
     display:none;
-    margin-top:12px;
+    margin-top:15px;
     font-size:16px;
     color:#fffde6;
-}
-
-/* Floating Hearts (Very Light) */
-.float{
-    position:fixed;
-    bottom:-30px;
-    font-size:18px;
-    animation:floatUp 14s linear infinite;
-    opacity:0.5;
-    pointer-events:none;
-}
-
-@keyframes floatUp{
-    from{transform:translateY(0);}
-    to{transform:translateY(-120vh);}
-}
-
-/* Disable heavy animation on small phones */
-@media (max-width:600px){
-
-    .heart{
-        animation:none;
-    }
-
-    .float{
-        display:none;
-    }
-
-    h1{font-size:2.2rem;}
-    h2{font-size:1.7rem;}
 }
 
 </style>
@@ -173,7 +139,7 @@ input{
 
 <body>
 
-<!-- Music -->
+<!-- Background Music -->
 <audio id="bgm" loop>
   <source src="https://www.bensound.com/bensound-music/bensound-romantic.mp3" type="audio/mpeg">
 </audio>
@@ -186,14 +152,23 @@ input{
 
 <h2>My Love, <span class="name">Bindu GV</span></h2>
 
-<div class="heart">💗</div>
-
 <!-- Message -->
 <div class="card">
 <p><strong>My Dearest Bindu,</strong></p>
-<p>You are my happiness and my home.</p>
-<p>You make every day special.</p>
-<p>I love you forever 💕</p>
+
+<p>
+You are my happiness, my peace, and my home.  
+With you, every day feels beautiful.
+</p>
+
+<p>
+Thank you for loving me, supporting me,  
+and standing by my side always.
+</p>
+
+<p>
+I promise to love you forever 💕
+</p>
 </div>
 
 <!-- Proposal -->
@@ -214,14 +189,14 @@ input{
 
 <div id="secretText">
 My love, you are my forever.  
-My today and tomorrow ❤️💍
+My today, my tomorrow, my always ❤️💍
 </div>
 
 </div>
 
 </div>
 
-<!-- Popup -->
+<!-- Proposal Popup -->
 <div id="proposal">
 
 <div class="proposal-box">
@@ -229,7 +204,8 @@ My today and tomorrow ❤️💍
 <h2>💍 Bindu ❤️</h2>
 
 <p>
-Will you be my forever Valentine?
+Will you be my Valentine,  
+today and forever?
 </p>
 
 <button onclick="accept()">Yes 💖</button>
@@ -282,24 +258,6 @@ function unlock(){
         alert("Wrong secret 😢");
     }
 }
-
-/* Light Hearts */
-function heart(){
-
-    if(window.innerWidth < 600) return;
-
-    const h=document.createElement("div");
-    h.className="float";
-    h.innerHTML="❤️";
-
-    h.style.left=Math.random()*100+"vw";
-
-    document.body.appendChild(h);
-
-    setTimeout(()=>h.remove(),14000);
-}
-
-setInterval(heart,1500);
 
 </script>
 
