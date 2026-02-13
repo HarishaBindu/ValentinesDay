@@ -4,27 +4,16 @@
 <meta charset="UTF-8">
 <title>For My Love Bindu ❤️</title>
 
-<!-- Romantic Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
 
 <style>
-/* Body */
 body{
     margin:0;
     font-family:'Poppins',sans-serif;
     background:linear-gradient(135deg,#ff9a9e,#fad0c4,#fbc2eb,#a18cd1);
-    background-size:400% 400%;
-    animation:bgMove 18s ease infinite;
     color:white;
     text-align:center;
     overflow-x:hidden;
-}
-
-/* Background Animation */
-@keyframes bgMove{
-    0%{background-position:0% 50%;}
-    50%{background-position:100% 50%;}
-    100%{background-position:0% 50%;}
 }
 
 /* Container */
@@ -37,8 +26,8 @@ body{
 /* Headings */
 h1{
     font-family:'Great Vibes',cursive;
-    font-size:3.8em;
-    text-shadow:0 0 15px rgba(255,255,255,0.6);
+    font-size:3.6em;
+    text-shadow:0 0 10px rgba(255,255,255,0.5);
 }
 
 h2{
@@ -47,13 +36,13 @@ h2{
 }
 
 .name{
-    color:#fff6d5;
+    color:#fff7d2;
     font-weight:bold;
 }
 
 /* Heart */
 .heart{
-    font-size:90px;
+    font-size:80px;
     animation:beat 1.2s ease-in-out infinite;
 }
 
@@ -65,13 +54,11 @@ h2{
 
 /* Cards */
 .card{
-    background:rgba(255,255,255,0.18);
-    padding:30px;
-    border-radius:25px;
-    margin:30px 0;
-    backdrop-filter:blur(12px);
-    box-shadow:0 15px 35px rgba(0,0,0,0.25);
-    border:1px solid rgba(255,255,255,0.2);
+    background:rgba(255,255,255,0.20);
+    padding:28px;
+    border-radius:22px;
+    margin:28px 0;
+    backdrop-filter:blur(10px);
 }
 
 /* Buttons */
@@ -79,18 +66,18 @@ button{
     background:linear-gradient(45deg,#ff758c,#ff7eb3);
     color:white;
     border:none;
-    padding:12px 30px;
+    padding:12px 28px;
     font-size:16px;
-    border-radius:30px;
+    border-radius:28px;
     cursor:pointer;
     transition:0.3s;
 }
 
 button:hover{
-    transform:scale(1.1);
+    transform:scale(1.08);
 }
 
-/* Inputs */
+/* Input */
 input{
     padding:10px;
     border-radius:20px;
@@ -105,7 +92,7 @@ input{
     position:fixed;
     top:15px;
     right:15px;
-    background:rgba(255,255,255,0.95);
+    background:rgba(255,255,255,0.9);
     color:#ff4f7b;
     padding:8px 16px;
     border-radius:20px;
@@ -117,7 +104,7 @@ input{
 #proposal{
     position:fixed;
     inset:0;
-    background:rgba(0,0,0,0.75);
+    background:rgba(0,0,0,0.7);
     display:none;
     justify-content:center;
     align-items:center;
@@ -127,16 +114,10 @@ input{
 .proposal-box{
     background:linear-gradient(135deg,#fff1f7,#ffe6f0);
     color:#ff4f7b;
-    padding:40px;
-    border-radius:30px;
+    padding:35px;
+    border-radius:25px;
     width:85%;
-    max-width:420px;
-    animation:pop 0.4s ease;
-}
-
-@keyframes pop{
-    from{transform:scale(0.7);opacity:0;}
-    to{transform:scale(1);opacity:1;}
+    max-width:400px;
 }
 
 /* Secret */
@@ -144,13 +125,13 @@ input{
     display:none;
     margin-top:15px;
     font-size:18px;
-    color:#fffde8;
+    color:#fffbe6;
 }
 
-/* Floating Hearts (Smooth) */
+/* Floating Hearts */
 .float{
     position:fixed;
-    bottom:-20px;
+    bottom:-30px;
     font-size:20px;
     animation:floatUp 10s ease-in-out infinite;
     opacity:0.7;
@@ -159,7 +140,7 @@ input{
 
 @keyframes floatUp{
     0%{transform:translateY(0) rotate(0deg);}
-    50%{transform:translateY(-50vh) rotate(8deg);}
+    50%{transform:translateY(-55vh) rotate(8deg);}
     100%{transform:translateY(-110vh) rotate(-8deg);}
 }
 </style>
@@ -274,7 +255,7 @@ function unlock(){
     }
 }
 
-/* Floating Hearts Generator */
+/* Floating Hearts */
 function heart(){
     const h=document.createElement("div");
     h.className="float";
@@ -288,7 +269,7 @@ function heart(){
     setTimeout(()=>h.remove(),10000);
 }
 
-setInterval(heart,800);
+setInterval(heart,900);
 
 </script>
 
